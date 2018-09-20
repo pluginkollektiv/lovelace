@@ -3,6 +3,8 @@
 	
 	a {
 		color: $color__header-link;
+		font-family: $font__family-headline;
+		font-weight: 400;
 		
 		&:hover {
 			color: $color__header-link-active;
