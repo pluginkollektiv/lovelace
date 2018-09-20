@@ -31,6 +31,8 @@ function lovelace_dequeue_assets() {
 	// remove Font Awesome
 	wp_dequeue_style( 'font-awesome' );
 	wp_deregister_style( 'font-awesome' );
+	wp_dequeue_style( 'atomic-blocks-fontawesome' );
+	wp_deregister_style( 'atomic-blocks-fontawesome' );
 }
 
 add_action ( 'wp_enqueue_scripts', 'lovelace_dequeue_assets', 100 );

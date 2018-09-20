@@ -7,10 +7,11 @@ select {
 }
 
 h1,
-h2 {
+h2,
+.entry-header .entry-title {
 	font-family: $font__family-monospace;
 	font-weight: 400 !important;
-	line-height: $font__family-headline;
+	line-height: $font__line-height-headline;
 }
 
 code,
@@ -45,6 +46,10 @@ p,
 	&:hover {
 		box-shadow: inset 0 -2px 0 $color__link;
 	}
+}
+
+.entry-header .entry-title a:hover {
+	box-shadow: inset 0 -4px $color__link;
 }
 
 // we don’t include Font Awesome
