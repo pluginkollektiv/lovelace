@@ -8,8 +8,12 @@ select {
 
 h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 .entry-header .entry-title {
-	font-family: $font__family-monospace;
+	font-family: $font__family-headline;
 	font-weight: 400 !important;
 	line-height: $font__line-height-headline;
 }

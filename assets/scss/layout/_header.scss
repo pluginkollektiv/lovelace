@@ -10,12 +10,12 @@
 	padding: 20px 0;
 }
 
-.site-title-wrap {
-	line-height: 60px;
+.titles-wrap {
+	display: none;
 }
 
-@media (min-width: 1000px) {
-	.titles-wrap {
-		padding-top: 0;
-	}
+.custom-logo-link svg {
+	display: block;
+	margin: 8px auto;
+	max-width: 300px;
 }
