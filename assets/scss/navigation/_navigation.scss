@@ -1,8 +1,45 @@
 .main-navigation {
 	font-size: $size__font-copy;
 	
+	a {
+		color: $color__header-link;
+		
+		&:hover {
+			color: $color__header-link-active;
+		}
+	}
+	
 	ul li a {
 		line-height: $size__header;
 		margin-bottom: 0;
+	}
+}
+
+.mobile-navigation {
+	background-color: darken($color__header-background, 10);
+}
+
+.drawer-wrap .searchform {
+	.search-input {
+		background-color: darken($color__header-background, 10);
+		color: $color__header-link;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			box-shadow: inset 0 0 4px darken($color__header-background, 20);
+			color: $color__header-link;
+		}
+	}
+	
+	.searchsubmit {
+		color: $color__header-link;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color__header-background !important;
+			box-shadow: none;
+		}
 	}
 }
