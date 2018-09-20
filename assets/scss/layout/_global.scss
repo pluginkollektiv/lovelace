@@ -30,10 +30,13 @@ p,
 .entry-content p a:hover,
 .post-navigation a:hover .post-title,
 .entry-header .entry-title a:hover,
-#page .more-link:hover,
+#page .more-link:hover {
+	color: $color__link;
+}
+
 .main-navigation ul li.current-menu-item a,
 .main-navigation ul li.current-page-item a {
-	color: $color__link;
+	color: $color__header-link-active;
 }
 
 .entry-content p a {
