@@ -66,3 +66,15 @@ function lovelace_enqueue_assets() {
 }
 
 add_action( 'wp_enqueue_scripts', 'lovelace_enqueue_assets' );
+
+/**
+ * Remove customizer sections from parent theme.
+ */
+function lovelace_remove_customizer_sections() {
+	global $wp_customize;
+	
+	$wp_customize->remove_section( 'atomic_blocks_theme_options' );
+	$wp_customize->remove_section( 'colors' );
+}
+
+add_action( 'customize_register', 'lovelace_remove_customizer_sections', 20 );
