@@ -1,0 +1,40 @@
+body,
+button,
+input,
+select {
+	font-family: $font__family-body;
+	line-height: $font__line-height-body;
+}
+
+code,
+pre {
+	font-family: $font__family-code;
+	line-height: $font__line-height-pre;
+}
+
+p,
+.embed-vimeo {
+	margin-bottom: 2.4em;
+}
+
+
+// links
+.entry-content p a,
+.entry-content p a:hover,
+.post-navigation a:hover .post-title,
+.entry-header .entry-title a:hover,
+#page .more-link:hover,
+.site-footer a,
+.main-navigation a:hover,
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current-page-item a {
+	color: $color__link;
+}
+
+.entry-content p a {
+	box-shadow: inset 0 -1px 0 $color__link;
+	
+	&:hover {
+		box-shadow: inset 0 -2px 0 $color__link;
+	}
+}

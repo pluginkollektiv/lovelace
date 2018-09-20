@@ -1,0 +1,17 @@
+.site-header {
+	background-color: $color__header;
+}
+
+.site-identity {
+	padding: 20px 0;
+}
+
+.site-title-wrap {
+	line-height: 60px;
+}
+
+@media (min-width: 1000px) {
+	.titles-wrap {
+		padding-top: 0;
+	}
+}
