@@ -1,0 +1,16 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.comment-navigation a,
+#page #infinite-handle button {
+	background-color: $color__link;
+	font-family: $font__family-body;
+	
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: $color__header-background;
+	}
+}
