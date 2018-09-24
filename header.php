@@ -41,7 +41,7 @@
 			<div class="site-identity clear">
 				<div class="site-title-wrap" itemscope="" itemtype="http://schema.org/Organization">
 					<!-- Use the Site Logo feature, if supported -->
-					<a href="https://login.pluginkollektiv.org/main/" class="custom-logo-link" rel="home" itemprop="url">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link" rel="home" itemprop="url">
 						<svg version="1.1" class="custom-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1038.4 153.6">
 							<style type="text/css">
 								.st0 {
@@ -68,7 +68,7 @@
 					</a>
 					<div class="titles-wrap ">
 						<p class="site-title">
-							<a href="https://login.pluginkollektiv.org/main/" rel="home">Pluginkollektiv</a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 						</p>
 					</div>
 				</div>
