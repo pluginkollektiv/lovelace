@@ -11,10 +11,25 @@
 		}
 	}
 	
-	ul li a {
-		line-height: $size__header;
-		margin-bottom: 0;
+	ul li {
+		a {
+			line-height: $size__header;
+			margin-bottom: 0;
+		}
+		
+		&.mlp-language-nav-item {
+			padding: 0 5px 0 15px;
+		}
+		
+		&.mlp-language-current a {
+			border-bottom: 1px solid #fff;
+			line-height: 20px;
+		}
 	}
+}
+
+li.mlp-language-nav-item + li.mlp-language-nav-item {
+	padding: 0;
 }
 
 .mobile-navigation {
