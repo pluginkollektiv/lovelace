@@ -10,13 +10,25 @@
 			flex-basis: 50%;
 			
 			@media (min-width: 500px) {
-				flex-basis: auto;
+				flex: 0 0 25%;
 			}
 		}
 	}
 }
 
+.wp-block-column:not(:first-child) {
+	margin-left: 0;
+}
+
 .real-people {
+	&.real-people { // needs to override common.css from Atomic Blocks
+		display: flex;
+	}
+	
+	.wp-block-column {
+		width: auto;
+	}
+	
 	.wp-block-image {
 		margin: 0 auto;
 		padding: 5px;
