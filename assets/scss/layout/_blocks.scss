@@ -1,14 +1,15 @@
 .wp-block-columns {
 	flex-wrap: wrap;
-	
+
 	@media (min-width: 500px) {
 		flex-wrap: nowrap;
 	}
-	
+
 	&.has-4-columns {
+
 		> .wp-block-column {
 			flex-basis: 50%;
-			
+
 			@media (min-width: 500px) {
 				flex: 0 0 25%;
 			}
@@ -21,19 +22,20 @@
 }
 
 .real-people {
+
 	&.real-people { // needs to override common.css from Atomic Blocks
 		display: flex;
 	}
-	
+
 	.wp-block-column {
 		width: auto;
 	}
-	
+
 	.wp-block-image {
 		margin: 0 auto;
 		padding: 5px;
 	}
-	
+
 	img {
 		border-radius: 50%;
 		display: block;
@@ -42,7 +44,7 @@
 		margin: 0 auto;
 		width: 90px;
 	}
-	
+
 	+ h1,
 	+ h2,
 	+ h3,

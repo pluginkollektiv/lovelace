@@ -2,7 +2,9 @@
 	font-family: "Fira Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: local('Fira Sans Regular'), local('FiraSans-Regular'),
-	url('assets/fonts/fira-sans-v8-latin-regular.woff2') format('woff2'),
-	url('assets/fonts/fira-sans-v8-latin-regular.woff') format('woff');
+	src:
+		local("Fira Sans Regular"),
+		local("FiraSans-Regular"),
+		url(assets/fonts/fira-sans-v8-latin-regular.woff2) format("woff2"),
+		url(assets/fonts/fira-sans-v8-latin-regular.woff) format("woff");
 }

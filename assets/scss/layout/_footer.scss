@@ -2,20 +2,20 @@
 	background-color: darken($color__header-background, 5);
 	color: $color__header-link;
 	padding-bottom: 40px;
-	
+
 	a,
 	.widget-title {
 		color: $color__header-link;
 	}
-	
+
 	a:hover {
 		color: $color__header-link-active;
 	}
-	
+
 	input[type="text"] {
 		background-color: darken($color__header-background, 10);
 		border-color: darken($color__header-background, 15);
-		
+
 		&:active,
 		&:focus,
 		&:hover {
@@ -24,10 +24,10 @@
 			color: $color__header-link;
 		}
 	}
-	
+
 	.searchform .searchsubmit {
 		color: $color__header-link;
-		
+
 		&:active,
 		&:focus,
 		&:hover {
@@ -38,10 +38,11 @@
 }
 
 .footer-widgets {
+
 	.footer-column {
 		padding-top: 40px;
 	}
-	
+
 	+ .footer-bottom {
 		border-top: 0;
 		padding-top: 0;
