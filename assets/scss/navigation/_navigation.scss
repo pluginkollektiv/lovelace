@@ -1,26 +1,27 @@
 .main-navigation {
 	font-size: $size__font-copy;
-	
+
 	a {
 		color: $color__header-link;
 		font-family: $font__family-headline;
 		font-weight: 400;
-		
+
 		&:hover {
 			color: $color__header-link-active;
 		}
 	}
-	
+
 	ul li {
+
 		a {
 			line-height: $size__header;
 			margin-bottom: 0;
 		}
-		
+
 		&.mlp-language-nav-item {
 			padding: 0 5px 0 15px;
 		}
-		
+
 		&.mlp-language-current a {
 			border-bottom: 1px solid #fff;
 			line-height: 20px;
@@ -37,10 +38,11 @@ li.mlp-language-nav-item + li.mlp-language-nav-item {
 }
 
 .drawer-wrap .searchform {
+
 	.search-input {
 		background-color: darken($color__header-background, 10);
 		color: $color__header-link;
-		
+
 		&:active,
 		&:focus,
 		&:hover {
@@ -48,10 +50,10 @@ li.mlp-language-nav-item + li.mlp-language-nav-item {
 			color: $color__header-link;
 		}
 	}
-	
+
 	.searchsubmit {
 		color: $color__header-link;
-		
+
 		&:active,
 		&:focus,
 		&:hover {

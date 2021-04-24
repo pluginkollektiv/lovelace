@@ -6,6 +6,7 @@
  *
  * @package lovelace
  */
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -33,7 +34,7 @@
 
 	<div class="top-navigation">
 		<?php
-			// Get the mobile menu
+			// Get the mobile menu.
 			get_template_part( 'template-parts/content-menu-drawer' );
 		?>
 
@@ -48,7 +49,7 @@
 									fill: #FFFFFF;
 								}
 							</style>
-							
+
 							<path class="st0" d="M67.7,87.6c-0.8,4.3-2.1,8.4-3.9,12.5c-1.8,4-4.2,7.4-7,10.1c-2.9,2.8-6.5,5-11.1,6.6c-4.5,1.7-9.7,2.5-15.5,2.5c-5.7,0-12.3-1.2-19.8-3.6v37.5H0V38.8c14.1-4.1,25.6-6.1,34.5-6.1c10.7,0,19.1,3.1,25.2,9.2c6.1,6.2,9.2,16.7,9.2,31.7C68.8,78.7,68.4,83.3,67.7,87.6z M10.4,105.8c5.5,2.8,12.2,4.1,20.1,4.1c9.7,0,16.6-3.3,20.9-10c4.2-6.7,6.4-15.4,6.4-26.2c0-21.7-8.4-32.5-25.2-32.5c-7.1,0-14.5,1.4-22.1,4.1V105.8z" />
 							<path class="st0" d="M100.3,1.5v99.8c0,3.4,0.7,5.8,2.2,7.1c1.5,1.3,3.5,2,6.2,2c3.5,0,7.1-0.5,10.7-1.5l0.8,7.9c-4.6,1.5-9.3,2.3-14.2,2.3c-11,0-16.5-5.9-16.5-17.7V1.5H100.3z" />
 							<path class="st0" d="M197.2,113.5c-10.7,3.8-22.1,5.8-34.3,5.8c-20.6,0-30.9-9.7-30.9-29.2V34.2h10.4v54.9c0,7.9,2.1,13.4,6.4,16.6c4.2,3.1,10.4,4.7,18.6,4.7c6.3,0,12.8-1.2,19.5-3.5V34.2h10.4V113.5z" />
@@ -76,10 +77,14 @@
 				<div class="top-navigation-right">
 					<!-- Main navigation -->
 					<nav id="site-navigation" class="main-navigation">
-						<?php wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'fallback_cb'    => 'atomic_blocks_fallback_menu',
-						) );?>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'primary',
+								'fallback_cb'    => 'atomic_blocks_fallback_menu',
+							)
+						);
+						?>
 					</nav><!-- .main-navigation -->
 				</div><!-- .top-navigation-right -->
 			</div><!-- .site-identity-->
@@ -87,7 +92,7 @@
 	</div><!-- .top-navigation -->
 
 	<!-- Get the archive page titles -->
-	<?php if( is_archive() || is_search() || is_404() ) { ?>
+	<?php if ( is_archive() || is_search() || is_404() ) { ?>
 		<div class="container text-container">
 			<div class="header-text">
 				<?php atomic_blocks_page_titles(); ?>
