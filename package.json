@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@wordpress/stylelint-config": "^21.28.0",
+    "stylelint-scss": "^5.3.1"
+  },
+  "scripts": {
+    "lint-scss": "stylelint assets/scss"
+  }
+}

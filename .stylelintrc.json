@@ -1,0 +1,8 @@
+{
+  "extends": "@wordpress/stylelint-config/scss",
+  "rules": {
+    "max-line-length": null,
+    "no-descending-specificity": null,
+    "value-keyword-case": null
+  }
+}
