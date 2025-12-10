@@ -4,8 +4,9 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package Atomic Blocks
+ * @package lovelace
  */
+
 ?>
 
 	</div><!-- #content -->
@@ -44,11 +45,15 @@
 
 			<?php if ( has_nav_menu( 'social' ) ) { ?>
 				<nav class="social-navigation">
-					<?php wp_nav_menu( array(
-						'theme_location' => 'social',
-						'depth'          => 1,
-						'fallback_cb'    => false
-					) );?>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'social',
+							'depth'          => 1,
+							'fallback_cb'    => false,
+						)
+					);
+					?>
 				</nav><!-- .social-navigation -->
 			<?php } ?>
 		</div><!-- .footer-bottom -->
